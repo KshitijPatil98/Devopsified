@@ -1,0 +1,18 @@
+# Node modules are managed inside the Docker container, no need to copy them
+node_modules
+npm-debug.log
+
+# Exclude the test folder
+test
+
+# Exclude the test folder
+test-reports
+
+# Exclude other unnecessary files
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+*.md
+*.log
+*.env

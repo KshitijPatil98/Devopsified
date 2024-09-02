@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsify-deployment
+  labels:
+    app: devopsify
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devopsify
+  template:
+    metadata:
+      labels:
+        app: devopsify
+    spec:
+      containers:
+        - name: devopsify
+          image: kshitij98/devopsify:1.0.0
+          ports:
+            - containerPort: 3000

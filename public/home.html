@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - DevOpsify</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+        text-align: center;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1em 0;
+        position: relative;
+      }
+      nav {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+      nav a {
+        color: white;
+        margin-left: 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      main {
+        padding: 2em;
+      }
+      section {
+        margin: 1em auto;
+        padding: 1em;
+        max-width: 800px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 2em;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 1em 0;
+        font-size: 1.2em;
+      }
+      .step {
+        background: #f9f9f9;
+        border-left: 5px solid #4caf50;
+        padding: 1em;
+        margin: 1em 0;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our simple NodeJS Application</h1>
+      <nav>
+        <a href="/techstack">Tech Stack</a>
+        <a href="/architecture">Architecture</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>
+          Let us see the steps to devopsify this NodeJS application end to end
+        </h2>
+        <ul>
+          <li class="step">
+            <h3>Step 1: Building a Multi-Stage Docker Build</h3>
+            <p>
+              We'll create a multi-stage Docker build to optimize the build
+              process, reduce image size, and enhance security.
+            </p>
+          </li>
+          <li class="step">
+            <h3>Step 2: Creating Kubernetes Artifacts</h3>
+            <p>
+              We'll define Kubernetes artifacts like deployments, services, and
+              config maps to manage our application.
+            </p>
+          </li>
+          <li class="step">
+            <h3>Step 3: Creating Helm Charts</h3>
+            <p>
+              We'll use Helm to create charts for packaging, deploying, and
+              managing Kubernetes applications.
+            </p>
+          </li>
+          <li class="step">
+            <h3>Step 4: Creating GitHub Actions Workflow</h3>
+            <p>
+              We'll set up GitHub Actions for continuous integration and
+              deployment (CI/CD) to automate the build and deployment process.
+            </p>
+          </li>
+          <li class="step">
+            <h3>Step 5: Setting Up Kubernetes Cluster and Prometheus</h3>
+            <p>
+              We'll deploy our application to a Kubernetes cluster and set up
+              Prometheus for monitoring and metrics collection.
+            </p>
+          </li>
+          <li class="step">
+            <h3>Step 6: Setting Up Argo CD</h3>
+            <p>
+              We'll use Argo CD for continuous delivery to manage and automate
+              application deployments in Kubernetes.
+            </p>
+          </li>
+          <li class="step">
+            <h3>Step 7: Testing</h3>
+            <p>
+              We'll implement testing at various stages, including unit tests,
+              integration tests, and end-to-end tests to ensure reliability and
+              quality.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
