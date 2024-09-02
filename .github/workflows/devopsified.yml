@@ -17,7 +17,7 @@ jobs:
       - name: Setup NodeJS version - 18
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Cache Dependencies
         id: cache
@@ -42,6 +42,7 @@ jobs:
   code-coverage:
     name: Code Coverage
     runs-on: ubuntu-22.04
+    needs: unit-testing
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -49,7 +50,7 @@ jobs:
       - name: Setup NodeJS version - 18
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Cache Dependencies
         id: cache
