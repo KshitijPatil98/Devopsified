@@ -1,0 +1,49 @@
+name: Devopsify Feature branch Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "feature/*"
+jobs:
+  unit-testing:
+    name: Unit Testing
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS version - 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Unit Tests
+        run: npm run test
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        with:
+          path: test-reports
+
+  # code-coverage:
+  #   name: Code Coverage
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+
+  #     - name: Setup NodeJS version - 18
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 18
+
+  #     - name: Install Dependencies
+  #       run: npm install
+
+  #     - name: Run Code
+  #       run: npm run test
