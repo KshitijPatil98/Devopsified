@@ -1,32 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="3" failures="1" errors="0" time="0.421">
-  <testsuite name="GET /home" errors="0" failures="1" skipped="0" timestamp="2024-08-30T21:54:37" time="0.399" tests="3">
-    <testcase classname="GET /home should return the home page" name="GET /home should return the home page" time="0.019">
-      <failure>Error: listen EADDRINUSE: address already in use :::3000
-    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
-    at listenInCluster (node:net:1788:12)
-    at Server.listen (node:net:1876:7)
-    at Function.listen (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/express/lib/application.js:635:24)
-    at Object.listen (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/src/app.js:26:20)
-    at Runtime._execModule (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runtime/build/index.js:1439:24)
-    at Runtime._loadModule (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runtime/build/index.js:1022:12)
-    at Runtime.requireModule (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runtime/build/index.js:882:12)
-    at Runtime.requireModuleOrMock (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runtime/build/index.js:1048:21)
-    at Object.require (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/test/app.test.js:2:25)
-    at Runtime._execModule (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runtime/build/index.js:1439:24)
-    at Runtime._loadModule (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runtime/build/index.js:1022:12)
-    at Runtime.requireModule (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runtime/build/index.js:882:12)
-    at jestAdapter (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/home/kshitij/Devops/End-to-End-DevOpsified/Devopsified/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="0.338">
+  <testsuite name="GET /home" errors="0" failures="0" skipped="0" timestamp="2024-09-02T17:25:40" time="0.301" tests="3">
+    <testcase classname="GET /home should return the home page" name="GET /home should return the home page" time="0.034">
     </testcase>
-    <testcase classname="GET /architecture should return the architecture image" name="GET /architecture should return the architecture image" time="0.012">
+    <testcase classname="GET /architecture should return the architecture image" name="GET /architecture should return the architecture image" time="0.01">
     </testcase>
-    <testcase classname="GET /techstack should return the tech stack page" name="GET /techstack should return the tech stack page" time="0.011">
-    </testcase>
-    <testcase classname=" Test execution failure: could be caused by test hooks like &apos;afterAll&apos;." name=" Test execution failure: could be caused by test hooks like &apos;afterAll&apos;." time="0">
-      <failure>{&quot;message&quot;:&quot;&quot;,&quot;stack&quot;:&quot;Error: Server is not running.\n    at new NodeError (node:internal/errors:399:5)\n    at Server.close (node:net:2082:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:2135:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)&quot;}</failure>
+    <testcase classname="GET /techstack should return the tech stack page" name="GET /techstack should return the tech stack page" time="0.002">
     </testcase>
   </testsuite>
 </testsuites>
