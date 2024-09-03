@@ -12,4 +12,8 @@ router.get("/architecture", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/architecture.png"));
 });
 
+router.get("/live", (req, res) => {
+  res.json({ status: "live" });
+});
+
 module.exports = router;
