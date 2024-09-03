@@ -110,5 +110,5 @@ jobs:
                ${{ vars.DOCKERHUB_USERNAME }}/devopsify:${{ github.sha }}
           docker ps
           echo Testing the image
-          wget -q -O- http://locahost:3000/live | grep live
+          wget -q -O- http://localhost:3000/live | grep live
           echo $?
